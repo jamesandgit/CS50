@@ -1,6 +1,12 @@
+// James Lee
+// CS50 Week 1: C
+// 12/6/2023
+
+#include <cs50.h>
 #include <stdio.h>
 
 int main(void)
 {
-  printf("hello, world/n");
+    string name = get_string("What is your name?\n");
+    printf("hello, %s\n", name);
 }
