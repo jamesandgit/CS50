@@ -17,17 +17,21 @@ int main(void)
     while
     ((h < 1) || (h > 8));
 
-// for loop to create the height of the row
+// for loop to create the height
     for (int row = 0; row < h; row++)
     {
-// for loop to create the width of the pyramid
+// for loop to create the column
         for (int col = 0; col < h; col++)
         {
 // row / column
             if (row + col >= h - 1)
-            printf("#");
+            {
+                printf("#");
+            }
             else
-            printf(" ");
+            {
+                printf(" ");
+            }
         }
         printf("\n");
     }
